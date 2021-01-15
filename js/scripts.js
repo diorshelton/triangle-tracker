@@ -10,14 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
   const scalene = document.getElementById('scalene');
   const notATriangle = document.getElementById('not-a-triangle');
 
-  let triangleSum = sideA + sideB + sideC;
-
   if ((sideA + sideB) <= sideC || (sideC + sideA) <= sideB || (sideB + sideC)<= sideA) {
     $(notATriangle).show();
   }
   else if (sideA === sideB || sideC === sideA || sideB ===sideC) {
     $(isosceles).show();
-    //console.log("isosceles")
   }
   else if (sideA !== sideB && sideB !== sideC) {
     $(scalene).show();
