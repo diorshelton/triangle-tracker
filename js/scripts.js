@@ -6,21 +6,26 @@ document.addEventListener('DOMContentLoaded', function(){
   let sideC = parseInt(document.getElementById('side-c').value);
 
   const equilateral = document.getElementById('equilateral');
-  const isoceles = document.getElementById('isosceles');
+  const isosceles = document.getElementById('isosceles');
   const scalene = document.getElementById('scalene');
   const notATriangle = document.getElementById('not-a-triangle');
 
   let triangleSum = sideA + sideB + sideC;
 
-  if ( sideA === sideB && sideB === sideC) {
-    console.log('equilateral')}
+  if ((sideA + sideB) <= sideC || (sideC + sideA) <= sideB || (sideB + sideC)<= sideA) {
+    $(notATriangle).show();
+  }
   else if (sideA === sideB || sideC === sideA || sideB ===sideC) {
-    console.log("isoceles")}
+    $(isosceles).show();
+    //console.log("isosceles")
+  }
   else if (sideA !== sideB && sideB !== sideC) {
-    console.log("scalene")}
-  else if ((sideA + sideB) <= sideC || (sideC + sideA) <= sideB || (sideB + sideC)<= sideA)
-    {console.log("Not a triangle")}
-
+    $(scalene).show();
+  }
+  else if ( sideA === sideB && sideB === sideC) {
+  $(equilateral).show();
+  }
+  triangleLengths.reset();
   e.preventDefault(); 
   });
 });
