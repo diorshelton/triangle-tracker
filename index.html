@@ -14,25 +14,44 @@
     <h1 class="text-center">Triangle Tracker</h1>
     <br>
     <br>
+
     <form id="triangle" >
-      <label for="side-one">Side 1</label>
-      <input id="side-one" type="number">
+      <label for="side-a">Side A</label>
+      <input id="side-a" type="number">
       <br>
       <br>
-      <label for="side-two">Side 2</label>
-      <input id="side-two" type="number">
+      <label for="side-b">Side B</label>
+      <input id="side-b" type="number">
       <br>
       <br>
-      <label for="side-three">Side 3</label>
-      <input id="side-three" type="number">
+      <label for="side-c">Side C</label>
+      <input id="side-c" type="number">
       <br>
       <br>
-      <button type="submit">submit</button>
-    <div class="triangle-type">
-      <br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="triangle-types">
       <h2>Triangle Type</h1>
         <p>This is a <span class="triangle-type">__</span> triangle </p>
     </div>
+
+    <div class="triangle-type" id="equilateral">
+      This is an equilateral triangle all sides are equal.
+    </div>
+
+    <div class="triangle-type" id="isoceles">
+      This is an isosceles triagle two sides are equal.
+    </div>
+
+    <div class="triangle-type" id="scalene">
+      This is a scalene triagle. No sides are equal
+    </div>
+
+    <div class="triangle-type" id="not-a-triangle">
+      This is not a triangle. The sum of the lengths of any two sides is less than or equal to the length of the third side.
+    </div>
+
   </form>
   </div>
 </body>
