@@ -12,13 +12,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
   let triangleSum = sideA + sideB + sideC;
 
-  if ( sideA === sideB && sideC) {
+  if ( sideA === sideB && sideB === sideC) {
     console.log('equilateral')}
-  else if (sideA === sideB || sideC) {
+  else if (sideA === sideB || sideC === sideA || sideB ===sideC) {
     console.log("isoceles")}
-  else if (sideA !== sideB || sideC) {
-    console.log("scalene")
-  }
+  else if (sideA !== sideB && sideB !== sideC) {
+    console.log("scalene")}
+  else if ((sideA + sideB) <= sideC || (sideC + sideA) <= sideB || (sideB + sideC)<= sideA)
+    {console.log("Not a triangle")}
 
   e.preventDefault(); 
   });
