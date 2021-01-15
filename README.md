@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _{Triangle Tracker}_
 
-#### _{Brief description of application}_
+#### _{Determines triangle type based on side length}_
 
 #### By _**{Dior Shelton}**_
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_{Based on the side lengths entered for sides A, B and C, Triangle Tracker determines if the shape is a triangle. If it is indeed a triangle, Triangle Tracker then determines what kind of triangle; isosceles, scalene or equilateral.}_
 
 ## Setup/Installation Requirements
 
@@ -26,8 +26,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known issues at this time._
 
 ## License
 
@@ -36,4 +35,4 @@ _{Let people know what to do if they run into any issues or have questions, idea
 ## Contact Information
 _If you run into any issues, have questions, ideas or concerns I encourage you to contact me or make a contribution to the code._
 
-_Feel free to contact me about this repo is via Github or_
+_Feel free to contact me about this repo is via Github_
