@@ -26,6 +26,8 @@ https://github.com/diorshelton/triangle-tracker.git
 
 * _No known issues at this time._
 
+## Live Link
+
 ## Contact Information
 _If you run into any issues, have questions, ideas or concerns I encourage you to contact me or make a contribution to the code._
 
